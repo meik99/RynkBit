@@ -1,0 +1,16 @@
+<div class="mdl-card mdl-shadow--4dp" *ngIf="project != null && project != undefined">
+  <div class="mdl-card__title">
+    <h1 class="mdl-card__title-text">
+      {{project.title}}
+    </h1>
+  </div>
+  <h1 class="mdl-card__subtitle-text">
+    {{project.subtitle}}
+  </h1>
+  <div class="mdl-card__media" *ngIf="project.image">
+    <img src="/assets/projects/images/{{project.image}}" width="100%"/>
+  </div>
+  <div class="mdl-card__supporting-text" *ngFor="let para of project.paragraphs">
+    {{para}}
+  </div>
+</div>
