@@ -30,7 +30,8 @@ export class MainComponent implements OnInit {
       ), new Project(
         "Coffee-Machine-Alarm",
       "Do i smell coffee?",
-      ["Like many programmers and IT-specialists out there I sometimes dream of coffee. To fulfill this dream I strapped a RaspberryPi to an old Nespresso machine and \n" +
+      ["Like many programmers and IT-specialists out there I sometimes dream of coffee. " +
+      "To fulfill this dream I strapped a RaspberryPi to an old Nespresso machine and \n" +
       "          created an alarm clock that wakes me up with a hot and steaming cup o' coffee."],
       ""
       ), new Project(
