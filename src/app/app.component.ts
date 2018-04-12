@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Link} from './main/Link';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  navigationLinks: Link[] = [];
+  navigationLinks: Link[] = [
+    new Link("Home", "/"),
+    // new Link("SmokeBreak", "/game/SmokeBreak")
+  ];
   title = "RynkBit";
 }

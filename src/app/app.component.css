@@ -4,7 +4,8 @@
 }
 
 
-.layout-transparent .mdl-layout__header
+.layout-transparent .mdl-layout__header,
+.mdl-navigation__link
 {
   background-color: white;
   color: orangered;

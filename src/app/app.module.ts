@@ -8,11 +8,16 @@ import { MainComponent } from './main/main.component';
 import {environment} from "../environments/environment";
 import { CardComponent } from './card/card.component';
 import { MusicNoteSyncComponent } from './projects/music-note-sync/music-note-sync.component';
+import { SmokeBreakComponent } from './smoke-break/smoke-break.component';
 
 const appRoutes: Routes = [
   {
     path: "",
     component: MainComponent
+  },
+  {
+    path: "game/SmokeBreak",
+    component: SmokeBreakComponent
   }
 ];
 
@@ -22,7 +27,8 @@ const appRoutes: Routes = [
     AppComponent,
     MainComponent,
     CardComponent,
-    MusicNoteSyncComponent
+    MusicNoteSyncComponent,
+    SmokeBreakComponent
   ],
   imports: [
     RouterModule.forRoot(
