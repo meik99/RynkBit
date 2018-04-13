@@ -1,16 +1,7 @@
-<div class="mdl-card mdl-shadow--4dp" *ngIf="project != null && project != undefined">
-  <div class="mdl-card__title">
-    <h1 class="mdl-card__title-text">
-      {{project.title}}
-    </h1>
-  </div>
-  <h1 class="mdl-card__subtitle-text">
-    {{project.subtitle}}
-  </h1>
-  <div class="mdl-card__media" *ngIf="project.image">
-    <img src="/assets/projects/images/{{project.image}}" width="100%"/>
-  </div>
-  <div class="mdl-card__supporting-text" *ngFor="let para of project.paragraphs">
-    {{para}}
-  </div>
+<div *ngIf="project != null && project != undefined" class="card">
+  <h3>{{project.title}}</h3>
+  <h5>{{project.subtitle}}</h5>
+  <a href="{{project.link}}" class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-button--ripple">
+    Read More
+  </a>
 </div>
